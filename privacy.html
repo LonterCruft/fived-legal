@@ -1,125 +1,451 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070d18">
-  <meta name="description" content="Informativa sulla privacy Five D: dati trattati, servizi Firebase, visibilitÃ , conservazione e cancellazione dellâ€™account.">
-  <title>Privacy â€” Five D</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informativa sulla privacy - FiveD</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="Five D, pagina iniziale"><span class="brand-mark" aria-hidden="true">5D</span><span>FIVE D</span></a>
-      <nav class="site-nav" aria-label="Navigazione principale">
-        <a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Termini</a>
-        <a href="community-guidelines.html">Community</a><a href="support.html">Supporto</a>
-      </nav>
-    </div>
-  </header>
-  <main id="contenuto" class="container legal-content">
+  <main class="container">
+
     <header>
-      <p class="eyebrow">Five D Â· Privacy</p>
       <h1>Informativa sulla privacy</h1>
-      <p class="meta">Ultimo aggiornamento: <span class="placeholder">[DATA DI AGGIORNAMENTO]</span> Â· Entrata in vigore: <span class="placeholder">[DATA DI ENTRATA IN VIGORE]</span></p>
-      <div class="callout">
-        <p><strong>Bozza da completare prima della pubblicazione.</strong> I dati tra parentesi quadre sono placeholder. Il codice descrive le funzionalitÃ  tecniche, ma non determina da solo il titolare, le basi giuridiche, i tempi di conservazione o la configurazione effettiva dei servizi Firebase. Questi elementi devono essere verificati e completati dal titolare con consulenza adeguata.</p>
-      </div>
+      <p class="subtitle">FiveD — MORE THAN A GAME</p>
     </header>
 
-    <section id="titolare">
-      <h2>1. Titolare e contatti</h2>
-      <p>Il titolare del trattamento Ã¨ <span class="placeholder">Davide Lorenzo Buttò</span>, con sede/indirizzo in <span class="placeholder">[INDIRIZZO]</span>. Per domande sulla privacy o per esercitare i diritti descritti sotto, scrivi a <span class="placeholder">fived.privacy@gmail.com</span>.</p>
-      <p>Se Ã¨ stato nominato un responsabile della protezione dei dati, i relativi contatti sono: <span class="placeholder">[CONTATTI DPO, SE APPLICABILE]</span>.</p>
+    <div class="callout">
+      <p>
+        <strong>Informativa sulla privacy di FiveD.</strong>
+        Questa informativa descrive il trattamento dei dati personali effettuato
+        in relazione all'utilizzo dell'app FiveD e dei relativi servizi.
+      </p>
+    </div>
+
+    <section>
+      <h2>1. Titolare del trattamento</h2>
+      <p>
+        Il titolare del trattamento dei dati personali è:
+      </p>
+
+      <p>
+        <strong>Davide Lorenzo Buttò</strong><br>
+        Indirizzo: [INDIRIZZO]<br>
+        Email privacy: <a href="mailto:fived.privacy@gmail.com">fived.privacy@gmail.com</a>
+      </p>
+
+      <p>
+        Il titolare può essere contattato per qualsiasi richiesta relativa
+        al trattamento dei dati personali e all'esercizio dei diritti previsti
+        dalla normativa applicabile.
+      </p>
+
+      <p>
+        Non è stato nominato un Responsabile della Protezione dei Dati (DPO).
+      </p>
     </section>
 
-    <nav class="contents" aria-label="Indice dellâ€™informativa">
-      <a href="#dati">Dati trattati</a><a href="#finalita">Uso e visibilitÃ </a><a href="#firebase">Firebase</a>
-      <a href="#terze-parti">Terze parti</a><a href="#sicurezza">Sicurezza</a><a href="#conservazione">Conservazione</a>
-      <a href="#cancellazione">Cancellazione</a><a href="#diritti">Diritti</a>
-    </nav>
+    <section>
+      <h2>2. Quali dati vengono trattati</h2>
 
-    <section id="dati">
-      <h2>2. Quali dati tratta Five D</h2>
-      <p>In base alle funzionalitÃ  utilizzate e alle informazioni che inserisci, il progetto puÃ² trattare le categorie seguenti. Non tutte sono necessarie per ogni account.</p>
+      <p>
+        In relazione all'utilizzo di FiveD possono essere trattate diverse
+        categorie di dati personali, in funzione delle funzionalità utilizzate.
+      </p>
+
       <ul>
-        <li><strong>Account e autenticazione:</strong> identificativo Firebase (UID), indirizzo email, username/nome visualizzato, avatar, lingua e ruolo/stato dellâ€™account. Lâ€™accesso previsto dal codice include email e password; sono inoltre presenti metodi per accesso Google e Apple, che richiedono la relativa configurazione. La password non Ã¨ salvata nel documento profilo Firestore: lâ€™autenticazione Ã¨ affidata a Firebase Authentication.</li>
-        <li><strong>Profili e Game Profiles:</strong> gioco, nickname, avatar, ruolo di gioco, modalitÃ , TRN se inserito, biografia, link social, stato online/offline/in cerca di giocatori, indicatore competitivo, Team associato, statistiche, risultati, visualizzazioni, attivitÃ  e Frames posseduti o equipaggiati.</li>
-        <li><strong>Team e ruoli:</strong> nome, tag, descrizione, immagini, link social, gioco, proprietario, membri e relativi ruoli, inviti, richieste di adesione, impostazioni di accesso, abbonamento del Team e autorizzazioni relative alle attivitÃ  nel progetto.</li>
-        <li><strong>Tornei:</strong> titolo, gioco, date, descrizione/regole, immagini, Team organizzatore, creatore e ruolo, iscrizioni e richieste di partecipazione, dati dei partecipanti e capitani, risultati/posizionamenti, premi, approvazioni e dati economici relativi alle quote del torneo. PuÃ² essere inserito un link dâ€™invito Discord.</li>
-        <li><strong>Chat e contenuti:</strong> testo dei messaggi, UID del mittente e dei membri, data/ora, stato di lettura, metadati delle conversazioni e immagini caricate dove consentito. Sono presenti chat dirette, di Team, amministrative/supporto, relative ai tornei e alle proposte â€œDACCI UNâ€™IDEAâ€. Le proposte includono titolo e descrizione; nelle chat e nei campi liberi potresti inserire dati personali, perciÃ² evita di condividere informazioni non necessarie.</li>
-        <li><strong>Frames e Gift Codes:</strong> Frames di giocatore o pacchetti Team posseduti/equipaggiati; richieste/acquisti e stato di adempimento; Gift Code generati, relativa ricompensa e scadenza, creatore e, quando riscattato, UID del beneficiario e data di riscatto.</li>
-        <li><strong>Richieste economiche e attivitÃ :</strong> richieste di pagamento con scopo, importo, valuta, stato, riepilogo, UID e, se pertinente, Team/gioco; registrazioni di transazioni, premi e prelievi storici; notifiche, richieste di amicizia, blocchi e segnalazioni con motivazione. Il codice non configura un provider di pagamento: le richieste attuali sono soggette a conferma manuale admin e non rappresentano un pagamento automatico.</li>
-        <li><strong>Dati tecnici e di servizio:</strong> le richieste elaborate dai servizi Firebase possono comportare i dati tecnici necessari per autenticazione, accesso ai documenti, caricamenti e funzionamento delle Cloud Functions. I dettagli dei log tecnici, diagnostica, indirizzi IP o telemetria dipendono dalla configurazione dei servizi e devono essere verificati dal titolare; non sono descritti come raccolti dallâ€™app oltre quanto accertato nel codice.</li>
+        <li>dati identificativi e di account;</li>
+        <li>nome utente, nickname e informazioni del profilo;</li>
+        <li>indirizzo email;</li>
+        <li>dati relativi all'autenticazione;</li>
+        <li>dati relativi ai profili di gioco;</li>
+        <li>dati relativi a team, ruoli e partecipazione alle attività della piattaforma;</li>
+        <li>dati relativi a tornei, richieste e interazioni con altri utenti;</li>
+        <li>messaggi e contenuti inviati tramite le funzionalità dell'app;</li>
+        <li>dati relativi a gift code, abbonamenti, frame e funzionalità economiche della piattaforma;</li>
+        <li>dati tecnici necessari al funzionamento, alla sicurezza e alla prevenzione degli abusi;</li>
+        <li>dati eventualmente forniti volontariamente dall'utente nelle richieste di supporto.</li>
+      </ul>
+
+      <p>
+        FiveD tratta esclusivamente i dati necessari rispetto alle finalità
+        per le quali vengono raccolti.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Finalità del trattamento</h2>
+
+      <p>I dati personali possono essere trattati per le seguenti finalità:</p>
+
+      <ul>
+        <li>creazione e gestione dell'account FiveD;</li>
+        <li>autenticazione e accesso all'app;</li>
+        <li>gestione dei profili di gioco;</li>
+        <li>creazione e gestione dei team;</li>
+        <li>gestione di ruoli, autorizzazioni e funzionalità della piattaforma;</li>
+        <li>gestione dei tornei e delle relative richieste;</li>
+        <li>gestione delle comunicazioni e delle chat previste dal servizio;</li>
+        <li>gestione degli abbonamenti e delle funzionalità acquistabili;</li>
+        <li>gestione dei Frame e dei relativi cataloghi;</li>
+        <li>gestione dei Gift Code;</li>
+        <li>gestione delle proposte "DACCI UN'IDEA";</li>
+        <li>prevenzione di frodi, abusi, spam e comportamenti contrari alle regole;</li>
+        <li>sicurezza dell'infrastruttura e protezione del servizio;</li>
+        <li>assistenza agli utenti;</li>
+        <li>adempimento di obblighi di legge;</li>
+        <li>accertamento, esercizio o difesa di diritti del titolare.</li>
       </ul>
     </section>
 
-    <section id="finalita">
-      <h2>3. FinalitÃ , basi giuridiche e visibilitÃ </h2>
-      <p>I dati sono usati per creare e gestire account e profili, mostrare profili e Team, consentire inviti e adesioni, organizzare tornei, fornire chat e supporto, moderare e proteggere la community, amministrare Frames/Gift Codes e registrare richieste economiche. Le basi giuridiche applicabili (ad esempio esecuzione del servizio richiesto, consenso o obblighi di legge) devono essere individuate dal titolare in base al servizio effettivamente offerto e alla normativa applicabile: <span class="placeholder">[BASI GIURIDICHE PER FINALITÃ€]</span>.</p>
-      <h3>Dati visibili agli altri utenti</h3>
-      <p>Il backend crea un profilo pubblico per gioco con username, avatar generale e campi del profilo, che puÃ² comprendere nickname, avatar di gioco, stato, gioco, link social, Team, statistiche e Frames. Le regole Firestore permettono agli utenti attivi di leggere i profili pubblici. Le informazioni pubbliche di Team e tornei possono essere mostrate agli utenti secondo stato, visibilitÃ  e regole del progetto. I messaggi sono accessibili ai membri autorizzati della relativa chat; gli amministratori possono accedere alle funzioni di moderazione e gestione previste dalle regole.</p>
-      <h3>Dati privati o a visibilitÃ  limitata</h3>
-      <p>Lâ€™email, i documenti account, i dati di integrazione eventualmente presenti e le registrazioni economiche non sono esposti come profilo pubblico dalle regole del progetto: lâ€™accesso Ã¨ limitato allâ€™utente interessato e agli amministratori autorizzati secondo le regole Firebase. Richieste torneo, chat private e contenuti delle chat sono soggetti ai relativi permessi. La visibilitÃ  effettiva puÃ² dipendere dalla configurazione e dal deployment backend: non condividere contenuti che non vuoi comunicare agli altri partecipanti della chat.</p>
-    </section>
+    <section>
+      <h2>4. Base giuridica del trattamento</h2>
 
-    <section id="firebase">
-      <h2>4. Firebase e archiviazione</h2>
-      <p>Il progetto integra i seguenti servizi Firebase:</p>
+      <p>
+        Il trattamento viene effettuato sulla base giuridica applicabile
+        alla specifica finalità.
+      </p>
+
+      <p>
+        In particolare, a seconda del trattamento, la base giuridica può essere:
+      </p>
+
       <ul>
-        <li><strong>Firebase Authentication</strong> gestisce lâ€™identitÃ  e i flussi di autenticazione, reset password e riautenticazione.</li>
-        <li><strong>Cloud Firestore</strong> conserva account, Game Profiles, profili pubblici, Team, tornei, iscrizioni/richieste, chat, messaggi, notifiche, segnalazioni, Gift Codes, dati di Frames e registrazioni economiche.</li>
-        <li><strong>Firebase Storage</strong> archivia immagini di profilo, Team, chat e tornei. Le regole prevedono limiti di tipo e dimensione per le immagini; lâ€™accesso Ã¨ disciplinato da identitÃ  e autorizzazioni del contenuto.</li>
-        <li><strong>Cloud Functions</strong> esegue operazioni server-side autenticate, tra cui aggiornamenti dei dati, funzioni di community e gestione delle richieste di cancellazione. La callable principale Ã¨ configurata nel codice in <code>us-central1</code>; ciÃ² non determina da solo la regione o la conservazione di tutti gli altri servizi Firebase.</li>
+        <li>
+          l'esecuzione del contratto o di misure precontrattuali richieste
+          dall'interessato, per la gestione dell'account e delle funzionalità
+          principali di FiveD;
+        </li>
+        <li>
+          l'adempimento di obblighi legali;
+        </li>
+        <li>
+          il consenso dell'interessato, quando richiesto dalla normativa;
+        </li>
+        <li>
+          il legittimo interesse del titolare, ad esempio per la sicurezza,
+          la prevenzione di frodi e abusi, la protezione del servizio,
+          la moderazione e la gestione di eventuali controversie,
+          nel rispetto del necessario bilanciamento con i diritti
+          e le libertà dell'interessato.
+        </li>
       </ul>
-      <p>Firebase Ã¨ fornito da Google. Ruoli contrattuali, localizzazione dei dati, sub-responsabili, trasferimenti internazionali, configurazione e documenti applicabili devono essere verificati nella console e nei termini del progetto: <span class="placeholder">[CONFIGURAZIONE E RIFERIMENTI CONTRATTUALI FIREBASE]</span>.</p>
     </section>
 
-    <section id="terze-parti">
-      <h2>5. Servizi di terze parti e link esterni</h2>
-      <p>Google e Apple sono presenti nel codice come provider di accesso, ma la loro disponibilitÃ  dipende dalla configurazione e dallâ€™attivazione effettiva. Usandoli, lâ€™autenticazione coinvolge il provider scelto secondo le sue informative e condizioni.</p>
-      <p>Five D consente di inserire e aprire link esterni a social network e inviti Discord, anche per Team e tornei. Nel codice verificato non risulta un flusso attivo di collegamento OAuth a Discord nÃ© lâ€™acquisizione di credenziali/token Discord; il link porta a un servizio esterno che tratta dati secondo le proprie regole, al di fuori del controllo di Five D. Lâ€™eventuale modello di dati dâ€™integrazione non prova che tale collegamento sia attivo.</p>
-      <p>Altri destinatari, trasferimenti o fornitori non devono essere presunti: il titolare deve aggiungere quelli effettivamente utilizzati, se presenti: <span class="placeholder">[ALTRI DESTINATARI E TRASFERIMENTI, SE APPLICABILI]</span>.</p>
+    <section>
+      <h2>5. Autenticazione e servizi Firebase</h2>
+
+      <p>
+        FiveD utilizza servizi forniti da Google Firebase per alcune componenti
+        dell'applicazione, tra cui autenticazione, database, archiviazione
+        e funzionalità server.
+      </p>
+
+      <p>
+        In particolare possono essere utilizzati:
+      </p>
+
+      <ul>
+        <li>Firebase Authentication;</li>
+        <li>Cloud Firestore;</li>
+        <li>Firebase Storage;</li>
+        <li>Cloud Functions.</li>
+      </ul>
+
+      <p>
+        I dati vengono trattati attraverso l'infrastruttura Firebase nella misura
+        necessaria al funzionamento dei servizi di FiveD. I relativi trattamenti
+        sono soggetti anche alla documentazione privacy e contrattuale applicabile
+        ai servizi Google utilizzati.
+      </p>
+
+      <p>
+        L'accesso tramite Google può essere utilizzato per l'autenticazione
+        dell'utente. Altri metodi di autenticazione eventualmente disponibili
+        dipendono dalla configurazione effettivamente attiva nell'app.
+      </p>
     </section>
 
-    <section id="sicurezza">
-      <h2>6. Sicurezza</h2>
-      <p>Il progetto usa autenticazione Firebase, regole Firestore/Storage e operazioni server-side per limitare lâ€™accesso ai dati in base a identitÃ , ruoli e appartenenza. Le immagini sono soggette a controlli di formato/dimensione nei percorsi previsti. Queste misure riducono i rischi, ma non consentono di garantire sicurezza assoluta; anche la configurazione e il deployment effettivi devono essere verificati prima del rilascio.</p>
-      <p>Non inviare password, token di accesso, codici di recupero o dati finanziari completi tramite chat o richieste di assistenza.</p>
+    <section>
+      <h2>6. Pagamenti e funzionalità economiche</h2>
+
+      <p>
+        FiveD prevede funzionalità relative ad abbonamenti, Frame, proposte
+        e altre componenti economiche della piattaforma.
+      </p>
+
+      <p>
+        Nella configurazione attuale, alcune richieste economiche possono essere
+        gestite tramite procedure amministrative e conferma manuale.
+        Non deve essere inteso come attivo un sistema di pagamento automatico
+        che non sia stato effettivamente integrato e configurato.
+      </p>
+
+      <p>
+        Qualora in futuro vengano integrati provider di pagamento, il relativo
+        trattamento dei dati potrà essere disciplinato anche dalle informative
+        privacy e dalle condizioni del provider utilizzato.
+      </p>
     </section>
 
-    <section id="conservazione">
-      <h2>7. Conservazione</h2>
-      <p>Il codice non stabilisce una durata generale di conservazione per ciascuna categoria. I dati sono conservati per il tempo necessario alle finalitÃ  dichiarate e, ove applicabile, per gli obblighi o la gestione di contestazioni; i periodi concreti devono essere stabiliti dal titolare e comunicati qui: <span class="placeholder">[TEMPI DI CONSERVAZIONE PER CATEGORIA]</span>.</p>
-      <p>La cancellazione non rimuove necessariamente ogni traccia: il flusso mantiene un record minimo di account disabilitato e un job tecnico di cancellazione; alcune registrazioni economiche e proposte IDEA possono essere pseudonimizzate per conservare la cronologia. Devono essere definite e comunicate le relative durate e finalitÃ : <span class="placeholder">[DURATE E CRITERI DI CONSERVAZIONE DELLE REGISTRAZIONI PSEUDONIMIZZATE]</span>.</p>
+    <section>
+      <h2>7. Destinatari dei dati e trasferimenti</h2>
+
+      <p>
+        I dati personali possono essere trattati da fornitori tecnologici
+        necessari al funzionamento del servizio, nei limiti delle rispettive
+        funzioni e secondo gli accordi applicabili.
+      </p>
+
+      <p>
+        Non sono previsti ulteriori destinatari commerciali dei dati oltre
+        ai fornitori tecnologici necessari al funzionamento del servizio
+        e alle autorità o ai soggetti ai quali la comunicazione sia richiesta
+        dalla legge.
+      </p>
+
+      <p>
+        I servizi tecnologici utilizzati possono comportare trattamenti
+        o trasferimenti di dati al di fuori dello Spazio Economico Europeo.
+        In tali casi il trasferimento dovrà avvenire sulla base degli strumenti
+        previsti dalla normativa applicabile, incluse, ove pertinenti,
+        decisioni di adeguatezza, clausole contrattuali standard o altri
+        meccanismi legalmente riconosciuti.
+      </p>
     </section>
 
-    <section id="cancellazione">
-      <h2>8. Cancellazione dellâ€™account</h2>
-      <p>Puoi avviare la richiesta dalla schermata account dellâ€™app. In produzione il flusso richiede una riautenticazione e usa la logica server-side disponibile: una callable autenticata registra la richiesta e avvia un job, che viene poi elaborato da una funzione server-side. La richiesta puÃ² essere bloccata finchÃ© esistono obblighi non risolti, ad esempio appartenenza a un Team, torneo attivo, premio in sospeso, pagamento in sospeso o saldo/credito bloccato. Potrebbe essere necessario lasciare i Team o trasferirne la proprietÃ  e risolvere tali pendenze.</p>
-      <p>Quando il job viene completato, il backend elimina lâ€™utente Firebase Authentication, i dati del documento account e le relative sottocollezioni, i profili pubblici, le notifiche, le richieste di amicizia e di adesione, gli inviti e le segnalazioni abbinate agli identificativi dellâ€™utente. Elimina inoltre i file nei percorsi Storage utente, profilo e avatar e i file chat caricati dallâ€™utente. Le chat dirette, admin e IDEA di cui lâ€™utente Ã¨ membro vengono eliminate con i relativi messaggi. Nelle altre chat i messaggi inviati dallâ€™utente sono modificati per sostituire mittente e testo e rimuovere il riferimento allâ€™immagine; lâ€™utente viene rimosso dai membri della chat. Le registrazioni di transazioni, prelievi, premi e richieste di pagamento sono pseudonimizzate; anche le idee sono dissociate dallâ€™UID e marcate come anonimizzate. Il wallet viene eliminato se non ha saldo o crediti bloccati.</p>
-      <p>La procedura conserva un tombstone tecnico con stato cancellato e un job di completamento. Non elimina automaticamente ogni dato o riferimento storico: ad esempio, i file Storage nel percorso immagini dei tornei <code>tournaments/{uid}/â€¦</code> non sono inclusi nella pulizia prevista, e dati storici o aggregati possono restare quando non vengono rimossi dalla logica descritta o sono pseudonimizzati. La cancellazione non equivale quindi alla rimozione definitiva di ogni traccia. Questa descrizione non stabilisce tempi di conservazione o completamento, che devono essere definiti e comunicati dal titolare: <span class="placeholder">[TEMPI E CONTATTO PER CANCELLAZIONE]</span>.</p>
+    <section>
+      <h2>8. Dati pubblicamente visibili</h2>
+
+      <p>
+        Alcune informazioni inserite dall'utente possono essere visibili
+        agli altri utenti di FiveD in relazione alle funzionalità social
+        e competitive della piattaforma.
+      </p>
+
+      <p>
+        Possono, ad esempio, essere visibili informazioni relative al nickname,
+        profilo di gioco, team, ruolo, partecipazione a tornei e altri contenuti
+        che l'utente pubblica o rende disponibili attraverso le funzionalità
+        dell'app.
+      </p>
+
+      <p>
+        L'utente deve evitare di inserire nei campi pubblici informazioni
+        personali non necessarie.
+      </p>
     </section>
 
-    <section id="diritti">
-      <h2>9. Diritti e reclami</h2>
-      <p>Nei limiti previsti dalla normativa applicabile, puoi chiedere accesso ai dati, rettifica, cancellazione, limitazione, opposizione, portabilitÃ  e revoca del consenso quando il trattamento si basa sul consenso. Puoi inoltre proporre reclamo allâ€™autoritÃ  di controllo competente. Per le richieste usa <span class="placeholder">fived.privacy@gmail.com</span>; il titolare puÃ² chiedere informazioni ragionevoli per verificare lâ€™identitÃ  e rispondere nei termini di legge.</p>
-      <p>AutoritÃ  di controllo competente e istruzioni aggiornate: <span class="placeholder">[AUTORITÃ€ DI CONTROLLO E MODALITÃ€ DI RECLAMO]</span>.</p>
+    <section>
+      <h2>9. Discord e collegamenti esterni</h2>
+
+      <p>
+        FiveD può consentire la pubblicazione o condivisione di link e inviti
+        Discord relativi a team, tornei o altre attività.
+      </p>
+
+      <p>
+        FiveD non utilizza attualmente un sistema di autenticazione OAuth
+        tramite Discord per l'accesso all'app. I collegamenti o gli inviti
+        Discord eventualmente presenti rimandano a servizi esterni.
+      </p>
+
+      <p>
+        L'utilizzo di Discord è soggetto alla relativa informativa privacy
+        e ai relativi termini di servizio.
+      </p>
     </section>
 
-    <section id="minori">
-      <h2>10. Minori</h2>
-      <p>Il codice esaminato non definisce una soglia dâ€™etÃ  nÃ© un flusso di consenso parentale. La soglia applicabile, le modalitÃ  di verifica e le informazioni per genitori/tutori devono essere stabilite prima della pubblicazione: <span class="placeholder">[ETÃ€ MINIMA E REGOLE PER MINORI]</span>.</p>
+    <section>
+      <h2>10. Conservazione dei dati</h2>
+
+      <p>
+        I dati dell'account e del profilo vengono conservati per il periodo
+        necessario alla gestione dell'account e all'erogazione dei servizi
+        richiesti dall'utente.
+      </p>
+
+      <p>
+        In caso di cancellazione dell'account, i dati vengono eliminati o
+        resi non direttamente riconducibili all'utente nella misura prevista
+        dal funzionamento del servizio, salvo i dati che debbano essere
+        conservati per obblighi di legge, sicurezza, prevenzione degli abusi,
+        gestione di controversie o esercizio e difesa di diritti.
+      </p>
+
+      <p>
+        I dati tecnici e di sicurezza possono essere conservati per il periodo
+        necessario a garantire la sicurezza del servizio, individuare abusi,
+        gestire incidenti e tutelare FiveD e i suoi utenti.
+      </p>
+
+      <p>
+        I dati relativi ad aspetti economici, moderazione e controversie
+        possono essere conservati per il periodo necessario agli obblighi
+        applicabili e alla gestione delle relative esigenze.
+      </p>
     </section>
 
-    <section id="modifiche">
-      <h2>11. Modifiche allâ€™informativa</h2>
-      <p>Eventuali aggiornamenti saranno pubblicati su questa pagina con la relativa data. Per modifiche sostanziali, il titolare indicherÃ  le modalitÃ  di comunicazione agli utenti: <span class="placeholder">[MODALITÃ€ DI AVVISO]</span>.</p>
+    <section>
+      <h2>11. Dati pseudonimizzati e registrazioni tecniche</h2>
+
+      <p>
+        In alcuni casi FiveD può conservare informazioni minime e tecniche
+        necessarie per dimostrare operazioni effettuate, gestire sicurezza,
+        frodi, controversie o obblighi legali anche dopo la cancellazione
+        dell'account.
+      </p>
+
+      <p>
+        Quando possibile e appropriato, tali informazioni possono essere
+        minimizzate o pseudonimizzate in modo da ridurre la possibilità
+        di associazione diretta con l'interessato.
+      </p>
     </section>
+
+    <section>
+      <h2>12. Cancellazione dell'account</h2>
+
+      <p>
+        L'utente può richiedere la cancellazione del proprio account attraverso
+        le funzionalità disponibili nell'app oppure contattando:
+        <a href="mailto:fived.privacy@gmail.com">fived.privacy@gmail.com</a>.
+      </p>
+
+      <p>
+        La richiesta viene gestita senza ingiustificato ritardo, tenendo conto
+        degli eventuali obblighi legali o delle necessità di conservazione
+        previste dalla presente informativa.
+      </p>
+
+      <p>
+        La cancellazione dell'account non comporta necessariamente la cancellazione
+        immediata di ogni informazione che la legge consenta o imponga di conservare.
+      </p>
+    </section>
+
+    <section>
+      <h2>13. Diritti dell'interessato</h2>
+
+      <p>
+        Nei casi previsti dalla normativa applicabile, l'interessato può esercitare
+        i propri diritti, tra cui:
+      </p>
+
+      <ul>
+        <li>ottenere conferma dell'esistenza o meno di dati personali;</li>
+        <li>accedere ai propri dati;</li>
+        <li>chiedere la rettifica dei dati inesatti;</li>
+        <li>chiedere la cancellazione dei dati nei casi previsti;</li>
+        <li>chiedere la limitazione del trattamento;</li>
+        <li>opporsi al trattamento nei casi previsti;</li>
+        <li>richiedere la portabilità dei dati quando applicabile;</li>
+        <li>revocare il consenso precedentemente prestato, quando il trattamento si basa sul consenso.</li>
+      </ul>
+
+      <p>
+        Le richieste possono essere inviate a:
+        <a href="mailto:fived.privacy@gmail.com">fived.privacy@gmail.com</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>14. Reclamo all'autorità di controllo</h2>
+
+      <p>
+        Qualora l'interessato ritenga che il trattamento dei propri dati personali
+        violi la normativa applicabile, può presentare un reclamo all'autorità
+        di controllo competente.
+      </p>
+
+      <p>
+        Per l'Italia, l'autorità di controllo competente è il
+        <strong>Garante per la protezione dei dati personali</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>15. Minori</h2>
+
+      <p>
+        FiveD è destinato a utenti di età pari o superiore a 14 anni.
+      </p>
+
+      <p>
+        Per i minori di 14 anni, nei casi in cui il trattamento si basi sul
+        consenso per servizi della società dell'informazione, il consenso
+        deve essere prestato o autorizzato da chi esercita la responsabilità
+        genitoriale, secondo quanto previsto dalla normativa applicabile.
+      </p>
+
+      <p>
+        Qualora venga rilevato un trattamento non conforme ai requisiti applicabili
+        in relazione a un minore, il titolare può adottare le misure necessarie,
+        inclusa la cancellazione dei relativi dati.
+      </p>
+    </section>
+
+    <section>
+      <h2>16. Sicurezza</h2>
+
+      <p>
+        FiveD adotta misure tecniche e organizzative ragionevoli e proporzionate
+        per proteggere i dati personali da accessi non autorizzati, perdita,
+        alterazione, divulgazione o distruzione.
+      </p>
+
+      <p>
+        Tra le misure possono rientrare autenticazione, controllo degli accessi,
+        regole di sicurezza del database, controlli lato server, limitazioni
+        delle operazioni sensibili e misure di prevenzione degli abusi.
+      </p>
+
+      <p>
+        Nessun sistema informatico può tuttavia garantire una sicurezza assoluta.
+      </p>
+    </section>
+
+    <section>
+      <h2>17. Modifiche alla presente informativa</h2>
+
+      <p>
+        La presente informativa può essere aggiornata nel tempo per riflettere
+        modifiche al servizio, ai trattamenti effettuati o alla normativa
+        applicabile.
+      </p>
+
+      <p>
+        Le modifiche sostanziali saranno pubblicate su questa pagina insieme
+        alla relativa data di aggiornamento e, quando opportuno, potranno essere
+        comunicate anche attraverso l'app o l'indirizzo email associato
+        all'account.
+      </p>
+
+      <p>
+        <strong>Ultimo aggiornamento: 20 ottobre 2026.</strong>
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        © 2026 FiveD — MORE THAN A GAME
+      </p>
+
+      <p>
+        Privacy:
+        <a href="mailto:fived.privacy@gmail.com">
+          fived.privacy@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <a href="terms.html">Termini di servizio</a> |
+        <a href="community-guidelines.html">Linee guida della community</a> |
+        <a href="support.html">Supporto</a>
+      </p>
+    </footer>
+
   </main>
-  <footer class="site-footer"><div class="footer-inner"><p>Five D Â· Informativa privacy</p><nav class="footer-links" aria-label="Altre pagine"><a href="index.html">Home</a><a href="terms.html">Termini</a><a href="community-guidelines.html">Community</a><a href="support.html">Supporto</a></nav></div></footer>
 </body>
 </html>
-
